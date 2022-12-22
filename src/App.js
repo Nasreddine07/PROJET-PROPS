@@ -10,7 +10,7 @@ function App() {
     }
     return (
       <div className="App">
-        <Profile User={User}>
+        <Profile User={User} func={()=>alert(`My name is ${User.fullName}`)}>
         <img src='image.png' style={{ width: "18rem" }} alt='react'/> 
         <h3>'we are learning react props'</h3>
         </Profile>
